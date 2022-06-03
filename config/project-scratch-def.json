@@ -1,0 +1,13 @@
+{
+  "orgName": "ScInome",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi", "ServiceCloud", "RecordTypes", "ServiceUser", "AuthorApex", "LightningScheduler"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
