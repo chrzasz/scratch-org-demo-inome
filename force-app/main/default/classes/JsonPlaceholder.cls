@@ -1,0 +1,22 @@
+public with sharing class JsonPlaceholder {
+
+    private static final String URL_TODOS = 'https://jsonplaceholder.typicode.com/todos/';
+    private static final String GET = 'GET';
+
+    public static JsonPlaceholderTodosWrapper getTodoById(String idValue) {
+        return JsonPlaceholderTodosWrapper.parse(calloutJson(URL_TODOS + idValue, GET));
+    }
+
+    public static List<JsonPlaceholderTodosWrapper> getAllTodos() {
+        return JsonPlaceholderTodosWrapper.parseArray(calloutJson(URL_TODOS, GET));
+    }
+
+    private static String calloutJson(String url, String method) {
+        Http httpCallout = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint(url);
+        request.setMethod(method);
+        HttpResponse response = httpCallout.send(request);
+        return response.getBody();
+    }
+}
