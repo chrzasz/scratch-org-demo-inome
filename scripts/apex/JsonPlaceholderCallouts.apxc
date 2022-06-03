@@ -1,0 +1,15 @@
+JsonPlaceholderTodosWrapper todo = JsonPlaceholder.getTodoById('1');
+System.debug(' ⚡⚡⚡ ' + todo);
+
+List<JsonPlaceholderTodosWrapper> wrappers = JsonPlaceholder.getAllTodos();
+for (JsonPlaceholderTodosWrapper w : wrappers) {
+    System.debug(' ⚡⚡⚡ ' + w.id + ' -> ' + w.userId);
+}
+
+JsonPlaceholderUsersWrapper user = JsonPlaceholder.getUserById('1');
+System.debug(' ⚡⚡⚡ ' + user);
+
+List<JsonPlaceholderUsersWrapper> wrappers = JsonPlaceholder.getAllUsers();
+for (JsonPlaceholderUsersWrapper w : wrappers) {
+    System.debug(' ⚡⚡⚡ ' + w.Id + ' -> ' + w.name);
+}
