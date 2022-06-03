@@ -9,7 +9,11 @@ public class JsonPlaceholderUsersWrapper {
 	public Company company;
 
 	
-	public static List<JsonPlaceholderUsersWrapper> parse(String json) {
+	public static JsonPlaceholderUsersWrapper parse(String json) {
+		return (JsonPlaceholderUsersWrapper) System.JSON.deserialize(json, JsonPlaceholderUsersWrapper.class);
+	}
+	
+	public static List<JsonPlaceholderUsersWrapper> parseArray(String json) {
 		return (List<JsonPlaceholderUsersWrapper>) System.JSON.deserialize(json, List<JsonPlaceholderUsersWrapper>.class);
 	}
 

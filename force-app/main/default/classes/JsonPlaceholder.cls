@@ -1,7 +1,16 @@
 public with sharing class JsonPlaceholder {
 
+    private static final String URL_USERS = 'https://jsonplaceholder.typicode.com/users';
     private static final String URL_TODOS = 'https://jsonplaceholder.typicode.com/todos/';
     private static final String GET = 'GET';
+
+    public static JsonPlaceholderUsersWrapper getUserById(String idValue) {
+        return JsonPlaceholderUsersWrapper.parse(calloutJson(URL_USERS + idValue, GET));
+    }
+
+    public static List<JsonPlaceholderUsersWrapper> getAllUsers() {
+        return JsonPlaceholderUsersWrapper.parseArray(calloutJson(URL_USERS, GET));
+    }
 
     public static JsonPlaceholderTodosWrapper getTodoById(String idValue) {
         return JsonPlaceholderTodosWrapper.parse(calloutJson(URL_TODOS + idValue, GET));
