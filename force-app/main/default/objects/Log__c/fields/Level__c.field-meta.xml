@@ -16,29 +16,29 @@ INFO będzie logował INFO, ERROR i WARN ale będzie pomijał DEBUG i TRACE</des
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>ERROR</fullName>
+                <fullName>🔴ERROR</fullName>
                 <default>false</default>
-                <label>ERROR</label>
+                <label>🔴ERROR</label>
             </value>
             <value>
-                <fullName>WARN</fullName>
+                <fullName>🟠WARN</fullName>
                 <default>false</default>
-                <label>WARN</label>
+                <label>🟠WARN</label>
             </value>
             <value>
-                <fullName>INFO</fullName>
+                <fullName>🟡INFO</fullName>
                 <default>false</default>
-                <label>INFO</label>
+                <label>🟡INFO</label>
             </value>
             <value>
-                <fullName>DEBUG</fullName>
+                <fullName>🟢DEBUG</fullName>
                 <default>false</default>
-                <label>DEBUG</label>
+                <label>🟢DEBUG</label>
             </value>
             <value>
-                <fullName>TRACE</fullName>
+                <fullName>🔵TRACE</fullName>
                 <default>false</default>
-                <label>TRACE</label>
+                <label>🔵TRACE</label>
             </value>
         </valueSetDefinition>
     </valueSet>
