@@ -12,3 +12,11 @@ Log__c log = new Log__c(
 
 upsert log;
 
+Logger.error('🔴Error🔴 test');
+Logger.warn('🟠Warn🟠 test');
+Logger.info('🟡Info🟡 test');
+Logger.debug('🟢Debug🟢 test');
+Logger.trace('🔵Trace🔵 test');
+Id jobId = Logger.saveAsync();
+System.debug(' ⚡⚡⚡ ' + jobId);
+
