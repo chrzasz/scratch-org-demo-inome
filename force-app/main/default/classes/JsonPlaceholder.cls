@@ -1,6 +1,6 @@
 public with sharing class JsonPlaceholder {
 
-    private static final String URL_USERS = 'https://jsonplaceholder.typicode.com/users';
+    private static final String URL_USERS = 'https://jsonplaceholder.typicode.com/users/';
     private static final String URL_TODOS = 'https://jsonplaceholder.typicode.com/todos/';
     private static final String GET = 'GET';
 
