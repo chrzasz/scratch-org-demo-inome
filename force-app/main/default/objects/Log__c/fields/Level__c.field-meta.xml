@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level__c</fullName>
+    <description>Poziomy kolejno wg ważności:
+ERROR, WARN, INFO, DEBUG, TRACE
+czyli np level:
+ERROR będzie pomijał kolejne levele i logował tylko logi ERROR
+INFO będzie logował INFO, ERROR i WARN ale będzie pomijał DEBUG i TRACE</description>
+    <externalId>false</externalId>
+    <label>Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>🔴ERROR</fullName>
+                <default>false</default>
+                <label>🔴ERROR</label>
+            </value>
+            <value>
+                <fullName>🟠WARN</fullName>
+                <default>false</default>
+                <label>🟠WARN</label>
+            </value>
+            <value>
+                <fullName>🟡INFO</fullName>
+                <default>false</default>
+                <label>🟡INFO</label>
+            </value>
+            <value>
+                <fullName>🟢DEBUG</fullName>
+                <default>false</default>
+                <label>🟢DEBUG</label>
+            </value>
+            <value>
+                <fullName>🔵TRACE</fullName>
+                <default>false</default>
+                <label>🔵TRACE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
