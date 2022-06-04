@@ -50,6 +50,11 @@
         <field>Log__c.RecordID__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Log__c.TimeStamp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Log__c-Log Layout</layout>
     </layoutAssignments>
